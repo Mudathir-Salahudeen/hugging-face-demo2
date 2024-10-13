@@ -1,3 +1,6 @@
+name: Sync to Hugging Face
+
+on:
   push:
     branches: [main]
 # Run this workflow manually from Actions tab
