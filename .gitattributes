@@ -4,3 +4,8 @@ venv/lib/python3.12/site-packages/tensorflow/libtensorflow_cc.so.2 filter=lfs di
 *.so filter=lfs diff=lfs merge=lfs -text
 *.map filter=lfs diff=lfs merge=lfs -text
 *.bin filter=lfs diff=lfs merge=lfs -text
+venv/bin/ruff filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.12/site-packages/gradio/templates/frontend/assets/Canvas3D-CFvhze1z.js.map filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.12/site-packages/gradio/templates/node/build/server/chunks/Canvas3D-CkfV4nXH.js.map filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.12/site-packages/gradio/templates/node/build/server/chunks/PlotlyPlot-BO4zgLFc.js.map filter=lfs diff=lfs merge=lfs -text
+venv/lib/python3.12/site-packages/tensorboard_data_server/bin/server filter=lfs diff=lfs merge=lfs -text
