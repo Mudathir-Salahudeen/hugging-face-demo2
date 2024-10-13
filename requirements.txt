@@ -1,5 +1,0 @@
-pytest
-gradio
-transformers
-tensorflow
-tf-keras
