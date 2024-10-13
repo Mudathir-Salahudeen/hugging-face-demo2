@@ -1,7 +1,17 @@
+# Ignore the virtual environment directory
 venv/
-*.so
 
+# Ignore Python bytecode files
 __pycache__/
-*.pyc
-.DS_Store
-venv/
+*.py[cod]
+
+# Ignore logs and other temporary files
+*.log
+*.tmp
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore large files (optional, adjust as needed)
+*.map
+*.bin
