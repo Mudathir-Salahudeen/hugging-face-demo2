@@ -21,10 +21,12 @@ import gradio as gr
 # Load the summarization model
 model = pipeline("summarization")
 
+
 # Define the prediction function
 def predict(prompt):
     summary = model(prompt)[0]["summary_text"]
     return summary
+
 
 # Set up the Gradio app
 with gr.Blocks() as demo:
@@ -33,7 +35,9 @@ with gr.Blocks() as demo:
     submit_button = gr.Button("Summarize")
 
     # submit_button.click(fn=predict, inputs=textbox, outputs=output)
-    submit_button.click(fn=predict, inputs=textbox, outputs=output)  # pylint: disable=no-member
+    submit_button.click(
+        fn=predict, inputs=textbox, outputs=output
+    )  # pylint: disable=no-member
 
 
 # Launch the app
