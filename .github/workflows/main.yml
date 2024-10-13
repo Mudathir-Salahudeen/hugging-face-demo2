@@ -37,8 +37,7 @@ jobs:
           fetch-depth: 0
       - name: Add remote
         env:
-          HF: ${{ secrets.HG   
- }}
+          HF: ${{ secrets.HG}}
         run: git remote add space https://mudathir:$HF@huggingface.co/spaces/mudathir/demo2   
 
       - name: Push to hub (Excludes Ignored Files)
